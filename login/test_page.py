@@ -20,7 +20,7 @@ class YiYiPage(PageBase):
         self.by_xpath(config.user_info).click()
         sleep(1)
         user_num = config.user_num_js
-        user_num_clear=config.user_num_clear
+        user_num_clear = config.user_num_clear
         self.js(user_num_clear)
         self.js(user_num)
         self.by_xpath(config.user_num).send_keys(config.user_name)

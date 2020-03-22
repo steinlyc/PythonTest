@@ -6,7 +6,6 @@ import config
 
 
 class TestYiYi(unittest.TestCase):
-
     @classmethod
     def setUpClass(cls):
         cls.driver = webdriver.Chrome()
@@ -24,7 +23,8 @@ class TestYiYi(unittest.TestCase):
         page = YiYiPage(self.driver)
         page.user_login()
         sleep(1)
-        self.assertEqual(page.by_xpath(config.check_login).text, "会员编号 : 462370")
+        self.assertEqual(
+            page.by_xpath(config.check_login).text, "会员编号 : 462370")
 
     @classmethod
     def tearDownClass(cls):
