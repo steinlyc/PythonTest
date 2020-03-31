@@ -2,6 +2,8 @@ astroid==2.3.3
 autopep8==1.5
 certifi==2019.11.28
 chardet==3.0.4
+entrypoints==0.3
+flake8==3.7.9
 idna==2.8
 isort==4.3.21
 itchat==1.3.10
@@ -9,6 +11,7 @@ lazy-object-proxy==1.4.3
 mccabe==0.6.1
 public==2019.4.13
 pycodestyle==2.5.0
+pyflakes==2.1.1
 PyJWT==1.7.1
 pylint==2.4.4
 pypng==0.0.20

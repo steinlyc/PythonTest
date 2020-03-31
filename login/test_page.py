@@ -1,5 +1,4 @@
 from base import PageBase
-from selenium.webdriver.common.action_chains import ActionChains
 import config
 from time import sleep
 

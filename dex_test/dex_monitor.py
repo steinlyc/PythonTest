@@ -28,7 +28,7 @@ local_formatstrptime = datetime.datetime.strptime(local_formatstrftime,
 Time_diff = str(abs(local_formatstrptime - utc_format_8))
 
 
-#将时间差转换成秒数
+# 将时间差转换成秒数
 def Conver(Time_diff):
     h, m, s = Time_diff.strip().split(":")
     Sum_time = int(h) * 3600 + int(m) * 60 + int(s)
