@@ -111,7 +111,7 @@
 # r = filter(lambda x: True if re.findall('[a-z]', x) else False, temp)
 # print(list(r))
 
-temp=[1,2,2,3,3,4,5,6,6,6,7,8]
+# temp=[1,2,2,3,3,4,5,6,6,6,7,8]
 
-f=set(temp)
-print(list(f))
+# f=set(temp)
+# print(list(f))
