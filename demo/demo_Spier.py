@@ -37,7 +37,7 @@ class Spier(object):
         return map(func, anchors)
 
     def __sortfix(self, anchors):
-        anchors = sorted(anchors, key=self.__sortfunc)
+        anchors = sorted(anchors, key=self.__sortfunc, reverse=True)
         return anchors
 
     def __sortfunc(self, anchors):
@@ -48,8 +48,9 @@ class Spier(object):
         return num
 
     def __show(self, anchors):
-        for item in anchors:
-            print(item['name'] + '------' + item['num'])
+        for item in range(0, len(anchors)):
+            print('No.' + str(item + 1) + ' ' + anchors[item]['name'] +
+                  '------' + anchors[item]['num'])
 
     def go(self):
         htmls = self.__contect()
