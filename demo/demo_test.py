@@ -115,3 +115,20 @@
 
 # f=set(temp)
 # print(list(f))
+
+# a = []
+# if not a:
+#     print(bool(a))
+#     print(not a)
+
+# from selenium import webdriver
+# from selenium.webdriver.support import expected_conditions as EC
+# import time
+
+# driver = webdriver.Chrome()
+# driver.get('http://www.baidu.com')
+# temp = EC.title_contains('9999')
+# temp2 = EC.title_contains('百度')
+
+# print(temp(driver))
+# print(temp2(driver))
