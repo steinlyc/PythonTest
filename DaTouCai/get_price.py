@@ -1,7 +1,7 @@
 import requests
+import datetime
 from twilio.rest import Client
 from threading import Timer
-import datetime
 
 
 def GetData():

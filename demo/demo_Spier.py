@@ -42,6 +42,8 @@ class Spier(object):
 
     def __sortfunc(self, anchors):
         res = re.findall(r'([\s\S]*?)[万人]', anchors['num'])
+        if ',' in res[0]:
+            res[0]=res[0].replace(',','')
         num = float(res[0])
         if '万' in anchors['num']:
             num *= 10000

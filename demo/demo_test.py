@@ -132,3 +132,14 @@
 
 # print(temp(driver))
 # print(temp2(driver))
+
+temp = {
+    'name':'lyc',
+    'age':12
+}
+
+print('名字是{name},年龄是{age}'.format(**temp))
+
+print('名字是{0},年龄是{1}'.format(*temp))
+
+print(f'名字是{temp["name"]},年龄是{temp["age"]}')
