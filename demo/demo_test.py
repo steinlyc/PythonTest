@@ -133,13 +133,58 @@
 # print(temp(driver))
 # print(temp2(driver))
 
-temp = {
-    'name':'lyc',
-    'age':12
-}
+# temp = {
+#     'name':'lyc',
+#     'age':12
+# }
 
-print('名字是{name},年龄是{age}'.format(**temp))
+# print('名字是{name},年龄是{age}'.format(**temp))
 
-print('名字是{0},年龄是{1}'.format(*temp))
+# print('名字是{0},年龄是{1}'.format(*temp))
 
-print(f'名字是{temp["name"]},年龄是{temp["age"]}')
+# print(f'名字是{temp["name"]},年龄是{temp["age"]}')
+
+# print("浅拷贝：")
+# import copy
+# b=[1,2,3,4,5]
+# print("id b:",id(b))
+# h=copy.copy(b)
+# print("id h",id(h))
+# print(h)
+# h.append(6)
+# b.append(7)
+# print(h)
+# print("id h",id(h))
+# print(b)   #浅拷贝新的列表h改变了，原来的b没变。
+ 
+# b[1]='n'   #列表元素改变后，新的列表也没变
+# print(h)
+ 
+# ('id b:', 140165805110552)
+# ('id h', 140165805110480)
+# [1, 2, 3, 4, 5]
+# [1, 2, 3, 4, 5, 6]
+# ('id h', 140165805110480)
+# [1, 2, 3, 4, 5]
+# [1, 2, 3, 4, 5, 6]
+# import time
+
+# def test(fnc):
+#     def getTime(*args,**kwargs):
+#         print(time.time())
+#         fnc(*args,**kwargs)
+#     return getTime
+
+# def run(*args,**kwargs):
+#     print(*args,kwargs)
+
+# run('a','b','c',a=1,b=2)
+
+# class Test(object):
+#     name='lily'
+    
+#     @staticmethod
+#     def run(cls):
+#         print(cls.name)
+
+# Test.run(Test)
