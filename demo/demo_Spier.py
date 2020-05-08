@@ -1,4 +1,4 @@
-from urllib import request
+import requests
 import ssl
 import re
 
@@ -13,10 +13,9 @@ class Spier(object):
     num_node = r'<i class="js-num">([\s\S]*?)</i>'
 
     def __contect(self):
-        res = request.urlopen(Spier.url)
-        htmls = res.read()
-        htmls = str(htmls, encoding='utf-8')
-        return htmls
+        res = requests.get(Spier.url).text
+        # htmls = str(res, encoding='utf-8')
+        return res
 
     def __analysis(self, htmls):
         node_list = re.findall(Spier.root_node, htmls)
